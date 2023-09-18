@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB416BB82AB1896E006095DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BB72AB1896E006095DF /* AppDelegate.swift */; };
+		DB416BBA2AB1896E006095DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BB92AB1896E006095DF /* SceneDelegate.swift */; };
+		DB416BBC2AB1896E006095DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BBB2AB1896E006095DF /* ViewController.swift */; };
+		DB416BBF2AB1896E006095DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB416BBD2AB1896E006095DF /* Main.storyboard */; };
+		DB416BC12AB1896F006095DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB416BC02AB1896F006095DF /* Assets.xcassets */; };
+		DB416BC42AB1896F006095DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB416BC22AB1896F006095DF /* LaunchScreen.storyboard */; };
+		DB416BCF2AB1896F006095DF /* dexrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BCE2AB1896F006095DF /* dexrTests.swift */; };
+		DB416BD92AB1896F006095DF /* dexrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BD82AB1896F006095DF /* dexrUITests.swift */; };
+		DB416BDB2AB1896F006095DF /* dexrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BDA2AB1896F006095DF /* dexrUITestsLaunchTests.swift */; };
+		DB416BEC2AB1BA22006095DF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BEB2AB1BA22006095DF /* Currency.swift */; };
+		DB416BEE2AB1BBDF006095DF /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BED2AB1BBDF006095DF /* Webservice.swift */; };
+		DB416BF02AB213EB006095DF /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416BEF2AB213EB006095DF /* CurrencyViewModel.swift */; };
+		DBF1F0012AB32F6900B57658 /* GetProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1F0002AB32F6900B57658 /* GetProductVC.swift */; };
+		DBF1F0032AB32F8C00B57658 /* AddProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1F0022AB32F8C00B57658 /* AddProductVC.swift */; };
+		DBF1F0052AB34F9F00B57658 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF1F0042AB34F9F00B57658 /* GoogleService-Info.plist */; };
+		DBF1F0082AB3512B00B57658 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DBF1F0072AB3512B00B57658 /* FirebaseFirestore */; };
+		DBF1F00A2AB35A6800B57658 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1F0092AB35A6800B57658 /* FirestoreService.swift */; };
+		DBF1F00C2AB35B7900B57658 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF1F00B2AB35B7900B57658 /* Product.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB416BCB2AB1896F006095DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB416BAC2AB1896E006095DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB416BB32AB1896E006095DF;
+			remoteInfo = dexr;
+		};
+		DB416BD52AB1896F006095DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB416BAC2AB1896E006095DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB416BB32AB1896E006095DF;
+			remoteInfo = dexr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB416BB42AB1896E006095DF /* dexr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dexr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB416BB72AB1896E006095DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB416BB92AB1896E006095DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB416BBB2AB1896E006095DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB416BBE2AB1896E006095DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB416BC02AB1896F006095DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB416BC32AB1896F006095DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB416BC52AB1896F006095DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB416BCA2AB1896F006095DF /* dexrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dexrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB416BCE2AB1896F006095DF /* dexrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dexrTests.swift; sourceTree = "<group>"; };
+		DB416BD42AB1896F006095DF /* dexrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dexrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB416BD82AB1896F006095DF /* dexrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dexrUITests.swift; sourceTree = "<group>"; };
+		DB416BDA2AB1896F006095DF /* dexrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dexrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB416BEB2AB1BA22006095DF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		DB416BED2AB1BBDF006095DF /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		DB416BEF2AB213EB006095DF /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		DBF1F0002AB32F6900B57658 /* GetProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductVC.swift; sourceTree = "<group>"; };
+		DBF1F0022AB32F8C00B57658 /* AddProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductVC.swift; sourceTree = "<group>"; };
+		DBF1F0042AB34F9F00B57658 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBF1F0092AB35A6800B57658 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		DBF1F00B2AB35B7900B57658 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB416BB12AB1896E006095DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF1F0082AB3512B00B57658 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB416BC72AB1896F006095DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB416BD12AB1896F006095DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB416BAB2AB1896E006095DF = {
+			isa = PBXGroup;
+			children = (
+				DB416BB62AB1896E006095DF /* dexr */,
+				DB416BCD2AB1896F006095DF /* dexrTests */,
+				DB416BD72AB1896F006095DF /* dexrUITests */,
+				DB416BB52AB1896E006095DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB416BB52AB1896E006095DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BB42AB1896E006095DF /* dexr.app */,
+				DB416BCA2AB1896F006095DF /* dexrTests.xctest */,
+				DB416BD42AB1896F006095DF /* dexrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB416BB62AB1896E006095DF /* dexr */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BE92AB19A3E006095DF /* ViewModel */,
+				DB416BE82AB19A26006095DF /* Model */,
+				DB416BE72AB1995F006095DF /* Service */,
+				DB416BBD2AB1896E006095DF /* Main.storyboard */,
+				DB416BB72AB1896E006095DF /* AppDelegate.swift */,
+				DB416BBB2AB1896E006095DF /* ViewController.swift */,
+				DBF1F0002AB32F6900B57658 /* GetProductVC.swift */,
+				DBF1F0022AB32F8C00B57658 /* AddProductVC.swift */,
+				DB416BB92AB1896E006095DF /* SceneDelegate.swift */,
+				DB416BC02AB1896F006095DF /* Assets.xcassets */,
+				DB416BC22AB1896F006095DF /* LaunchScreen.storyboard */,
+				DB416BC52AB1896F006095DF /* Info.plist */,
+				DBF1F0042AB34F9F00B57658 /* GoogleService-Info.plist */,
+			);
+			path = dexr;
+			sourceTree = "<group>";
+		};
+		DB416BCD2AB1896F006095DF /* dexrTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BCE2AB1896F006095DF /* dexrTests.swift */,
+			);
+			path = dexrTests;
+			sourceTree = "<group>";
+		};
+		DB416BD72AB1896F006095DF /* dexrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BD82AB1896F006095DF /* dexrUITests.swift */,
+				DB416BDA2AB1896F006095DF /* dexrUITestsLaunchTests.swift */,
+			);
+			path = dexrUITests;
+			sourceTree = "<group>";
+		};
+		DB416BE72AB1995F006095DF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BED2AB1BBDF006095DF /* Webservice.swift */,
+				DBF1F0092AB35A6800B57658 /* FirestoreService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DB416BE82AB19A26006095DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BEB2AB1BA22006095DF /* Currency.swift */,
+				DBF1F00B2AB35B7900B57658 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB416BE92AB19A3E006095DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB416BEF2AB213EB006095DF /* CurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB416BB32AB1896E006095DF /* dexr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB416BDE2AB1896F006095DF /* Build configuration list for PBXNativeTarget "dexr" */;
+			buildPhases = (
+				DB416BB02AB1896E006095DF /* Sources */,
+				DB416BB12AB1896E006095DF /* Frameworks */,
+				DB416BB22AB1896E006095DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dexr;
+			packageProductDependencies = (
+				DBF1F0072AB3512B00B57658 /* FirebaseFirestore */,
+			);
+			productName = dexr;
+			productReference = DB416BB42AB1896E006095DF /* dexr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB416BC92AB1896F006095DF /* dexrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB416BE12AB1896F006095DF /* Build configuration list for PBXNativeTarget "dexrTests" */;
+			buildPhases = (
+				DB416BC62AB1896F006095DF /* Sources */,
+				DB416BC72AB1896F006095DF /* Frameworks */,
+				DB416BC82AB1896F006095DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB416BCC2AB1896F006095DF /* PBXTargetDependency */,
+			);
+			name = dexrTests;
+			productName = dexrTests;
+			productReference = DB416BCA2AB1896F006095DF /* dexrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB416BD32AB1896F006095DF /* dexrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB416BE42AB1896F006095DF /* Build configuration list for PBXNativeTarget "dexrUITests" */;
+			buildPhases = (
+				DB416BD02AB1896F006095DF /* Sources */,
+				DB416BD12AB1896F006095DF /* Frameworks */,
+				DB416BD22AB1896F006095DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB416BD62AB1896F006095DF /* PBXTargetDependency */,
+			);
+			name = dexrUITests;
+			productName = dexrUITests;
+			productReference = DB416BD42AB1896F006095DF /* dexrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB416BAC2AB1896E006095DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DB416BB32AB1896E006095DF = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DB416BC92AB1896F006095DF = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DB416BB32AB1896E006095DF;
+					};
+					DB416BD32AB1896F006095DF = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DB416BB32AB1896E006095DF;
+					};
+				};
+			};
+			buildConfigurationList = DB416BAF2AB1896E006095DF /* Build configuration list for PBXProject "dexr" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB416BAB2AB1896E006095DF;
+			packageReferences = (
+				DBF1F0062AB3512B00B57658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = DB416BB52AB1896E006095DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB416BB32AB1896E006095DF /* dexr */,
+				DB416BC92AB1896F006095DF /* dexrTests */,
+				DB416BD32AB1896F006095DF /* dexrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB416BB22AB1896E006095DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB416BC42AB1896F006095DF /* LaunchScreen.storyboard in Resources */,
+				DBF1F0052AB34F9F00B57658 /* GoogleService-Info.plist in Resources */,
+				DB416BC12AB1896F006095DF /* Assets.xcassets in Resources */,
+				DB416BBF2AB1896E006095DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB416BC82AB1896F006095DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB416BD22AB1896F006095DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB416BB02AB1896E006095DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF1F0032AB32F8C00B57658 /* AddProductVC.swift in Sources */,
+				DB416BEC2AB1BA22006095DF /* Currency.swift in Sources */,
+				DB416BF02AB213EB006095DF /* CurrencyViewModel.swift in Sources */,
+				DB416BBC2AB1896E006095DF /* ViewController.swift in Sources */,
+				DB416BB82AB1896E006095DF /* AppDelegate.swift in Sources */,
+				DB416BEE2AB1BBDF006095DF /* Webservice.swift in Sources */,
+				DBF1F0012AB32F6900B57658 /* GetProductVC.swift in Sources */,
+				DBF1F00C2AB35B7900B57658 /* Product.swift in Sources */,
+				DBF1F00A2AB35A6800B57658 /* FirestoreService.swift in Sources */,
+				DB416BBA2AB1896E006095DF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB416BC62AB1896F006095DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB416BCF2AB1896F006095DF /* dexrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB416BD02AB1896F006095DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB416BD92AB1896F006095DF /* dexrUITests.swift in Sources */,
+				DB416BDB2AB1896F006095DF /* dexrUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB416BCC2AB1896F006095DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB416BB32AB1896E006095DF /* dexr */;
+			targetProxy = DB416BCB2AB1896F006095DF /* PBXContainerItemProxy */;
+		};
+		DB416BD62AB1896F006095DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB416BB32AB1896E006095DF /* dexr */;
+			targetProxy = DB416BD52AB1896F006095DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB416BBD2AB1896E006095DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB416BBE2AB1896E006095DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB416BC22AB1896F006095DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB416BC32AB1896F006095DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB416BDC2AB1896F006095DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB416BDD2AB1896F006095DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB416BDF2AB1896F006095DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZ6HP9PKLB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dexr/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use your camera to scan codes.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ibrahimdagci.dexr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB416BE02AB1896F006095DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LZ6HP9PKLB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = dexr/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use your camera to scan codes.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ibrahimdagci.dexr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB416BE22AB1896F006095DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ibrahimdagci.dexrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dexr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dexr";
+			};
+			name = Debug;
+		};
+		DB416BE32AB1896F006095DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ibrahimdagci.dexrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dexr.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dexr";
+			};
+			name = Release;
+		};
+		DB416BE52AB1896F006095DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ibrahimdagci.dexrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dexr;
+			};
+			name = Debug;
+		};
+		DB416BE62AB1896F006095DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ibrahimdagci.dexrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = dexr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB416BAF2AB1896E006095DF /* Build configuration list for PBXProject "dexr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB416BDC2AB1896F006095DF /* Debug */,
+				DB416BDD2AB1896F006095DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB416BDE2AB1896F006095DF /* Build configuration list for PBXNativeTarget "dexr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB416BDF2AB1896F006095DF /* Debug */,
+				DB416BE02AB1896F006095DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB416BE12AB1896F006095DF /* Build configuration list for PBXNativeTarget "dexrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB416BE22AB1896F006095DF /* Debug */,
+				DB416BE32AB1896F006095DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB416BE42AB1896F006095DF /* Build configuration list for PBXNativeTarget "dexrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB416BE52AB1896F006095DF /* Debug */,
+				DB416BE62AB1896F006095DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBF1F0062AB3512B00B57658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBF1F0072AB3512B00B57658 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBF1F0062AB3512B00B57658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB416BAC2AB1896E006095DF /* Project object */;
+}
